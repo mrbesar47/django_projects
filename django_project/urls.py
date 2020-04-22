@@ -24,7 +24,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('blog/', include('blog.urls')),
     path('generator/', include('generator.urls')),
-    #path('portfolio/', include('portfolio.urls')),
 
 ]
 

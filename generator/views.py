@@ -7,7 +7,7 @@ def generator(request):
     return render(request, 'generator/generator.html')
 
 
-def generatedpassword(request):
+def password(request):
 
     characters = list('abcdefghijklmopqrstuvwxyz')
 
@@ -24,4 +24,4 @@ def generatedpassword(request):
     for x in range(length):
         thepassword += random.choice(characters)
 
-    return render(request, 'generator/password.html', {'password': thepassword})
+    return render(request, 'generator/password.html', {'password1': thepassword})
